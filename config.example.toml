@@ -1,0 +1,15 @@
+# Path to your separate notes Git repository (local clone)
+repo_path = "/absolute/path/to/your/notes-repo"
+
+# Relative folder inside the notes repo that contains your Markdown tree
+notes_root = "notes"
+
+# Default branch name for messaging (used for tips, not enforced)
+default_branch = "main"
+
+# If true, the app may execute `git add/commit/push` via subprocess
+# (It will still ask for confirmation.)
+allow_git_exec = false
+
+# Preferred editor command (used for 'O' open-in-editor later; currently unused)
+editor = ""
