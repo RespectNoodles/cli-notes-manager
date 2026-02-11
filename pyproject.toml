@@ -9,7 +9,7 @@ description = "Cross-platform CLI notes navigator (menu-first) backed by a Git r
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
-authors = [{name = "Your Name"}]
+authors = [{name = "Perish"}]
 dependencies = [
   "rich>=13.7.1",
   "PyYAML>=6.0.2",
@@ -32,3 +32,11 @@ notes-cli = "notes_cli.app:main"
 [tool.ruff]
 line-length = 100
 target-version = "py310"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["notes_cli*"]
+exclude = ["example_notes_repo*", "tests*"]
